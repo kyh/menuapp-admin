@@ -9,20 +9,20 @@ angular.module('appApp', [
 ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/MenuApp-Admin/#/menu', {
+      .when('/menu', {
         templateUrl: 'views/menu.html',
         controller: 'MainCtrl'
       })
-      .when('/MenuApp-Admin/#/categories', {
+      .when('/categories', {
         templateUrl: 'views/categories.html',
         controller: 'MainCtrl'
       })
-      .when('/MenuApp-Admin/#/orders', {
+      .when('/orders', {
         templateUrl: 'views/orders.html',
         controller: 'OrdersCtrl'
       })
       .otherwise({
-        redirectTo: '/MenuApp-Admin/#/menu'
+        redirectTo: '/menu'
       });
   })
 
