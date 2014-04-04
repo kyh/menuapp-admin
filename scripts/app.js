@@ -9,11 +9,11 @@ angular.module('appApp', [
 ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('MenuApp-Admin/#/menu', {
+      .when('/MenuApp-Admin/#/menu', {
         templateUrl: 'views/menu.html',
         controller: 'MainCtrl'
       })
-      .when('MenuApp-Admin/#/categories', {
+      .when('/MenuApp-Admin/#/categories', {
         templateUrl: 'views/categories.html',
         controller: 'MainCtrl'
       })
